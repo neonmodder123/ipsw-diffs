@@ -42,13 +42,15 @@ jobs:
 
       - name: Install ipsw
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           url="$(gh api repos/blacktop/ipsw/releases/latest \
             --jq '.assets[] | select(.name | test("^ipsw_.*linux_x86_64\\.deb$")) | .browser_download_url')"
           curl -fsSL -o /tmp/ipsw.deb "$url"
-          sudo dpkg -i /tmp/ipsw.deb
+          sudo dpkg -i /tmp/ipsw.deb || true
+          sudo apt-get update
+          sudo apt-get install -y -f
           ipsw version
 
       - name: Install apfs-fuse
@@ -112,12 +114,14 @@ jobs:
             fi
 
             rootfs_dir="$ipsw_dir/rootfs"
-            echo "Extracting rootfs from $ipsw_file ..."
-            ipsw extract --files -o "$rootfs_dir" "$ipsw_file"
+            mkdir -p "$rootfs_dir"
+            echo "Extracting dyld_shared_cache (arm64e) from $ipsw_file ..."
+            ipsw extract --dyld --dyld-arch arm64e -o "$rootfs_dir" "$ipsw_file"
 
-            cache_file="$rootfs_dir/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e"
-            if [ ! -f "$cache_file" ]; then
-              echo "::error::dyld_shared_cache_arm64e not found in $rootfs_dir"
+            cache_file="$(find "$rootfs_dir" -type f -name 'dyld_shared_cache*' -print -quit || true)"
+            if [ -z "$cache_file" ]; then
+              echo "::error::dyld_shared_cache not found under $rootfs_dir"
+              find "$rootfs_dir" -maxdepth 4 -type f -print | sed -n '1,200p'
               exit 1
             fi
 
@@ -137,7 +141,7 @@ jobs:
                             "usr/libexec/gamed" \
                             "System/Library/Frameworks/GameStoreKit.framework/GameStoreKit"; do
               base=$(basename "$relpath")
-              found_file=$(find "$staging" -type f -name "$base" | head -1)
+              found_file=$(find "$staging" -type f -name "$base" | head -1 || true)
               if [ -n "$found_file" ]; then
                 dest="$clean_staging/$relpath"
                 mkdir -p "$(dirname "$dest")"
