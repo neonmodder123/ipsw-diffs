@@ -1,0 +1,156 @@
+name: extract files from an ipsw
+
+on:
+  workflow_dispatch:
+    inputs:
+      device:
+        description: 'device id'
+        required: false
+        default: 'iPhone18,1'
+      prev_build:
+        description: 'old build'
+        required: false
+        default: '23F77'
+      next_build:
+        description: 'new build (23G5028e)'
+        required: false
+        default: '23G5028e'
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: extract-files
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          fetch-depth: 1
+
+      - name: Free up disk space
+        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
+        with:
+          tool-cache: true
+          swap-storage: false
+
+      - name: Install ipsw
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          url="$(gh api repos/blacktop/ipsw/releases/latest \
+            --jq '.assets[] | select(.name | test("^ipsw_.*linux_x86_64\\.deb$")) | .browser_download_url')"
+          curl -fsSL -o /tmp/ipsw.deb "$url"
+          sudo dpkg -i /tmp/ipsw.deb
+          ipsw version
+
+      - name: Install apfs-fuse
+        env:
+          APFS_FUSE_SHA: 66b86bd525e8cb90f9012543be89b1f092b75cf3
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            fuse3 libfuse3-dev libbz2-dev libattr1-dev zlib1g-dev cmake g++ git
+          src="$RUNNER_TEMP/apfs-fuse"
+          git clone --quiet https://github.com/sgan81/apfs-fuse.git "$src"
+          git -C "$src" checkout --quiet "$APFS_FUSE_SHA"
+          git -C "$src" submodule update --init --recursive --quiet
+          cmake -S "$src" -B "$src/build" -DCMAKE_BUILD_TYPE=Release
+          cmake --build "$src/build" --parallel "$(nproc)"
+          sudo install -m 0755 "$src/build/apfs-fuse" /usr/local/bin/apfs-fuse
+          command -v apfs-fuse
+
+      - name: Add swap
+        run: |
+          set -euo pipefail
+          swapdir=/mnt
+          df "$swapdir" >/dev/null 2>&1 || swapdir=/
+          avail_g="$(df -P "$swapdir" | awk 'NR==2 {print int($4/1024/1024)}')"
+          size_g=$(( avail_g - 10 )); [ "$size_g" -gt 28 ] && size_g=28
+          if [ "$size_g" -lt 8 ]; then
+            echo "::warning::Only ${avail_g}G free on ${swapdir}; skipping swap"
+            exit 0
+          fi
+          swapfile="$swapdir/swapfile"
+          sudo fallocate -l "${size_g}G" "$swapfile" || sudo dd if=/dev/zero of="$swapfile" bs=1M count=$(( size_g * 1024 ))
+          sudo chmod 600 "$swapfile"
+          sudo mkswap "$swapfile" >/dev/null
+          sudo swapon "$swapfile"
+          echo "Added ${size_g}G swap at ${swapfile}"
+          free -h
+
+      - name: Download and extract files
+        env:
+          DEVICE: ${{ github.event.inputs.device }}
+          PREV_BUILD: ${{ github.event.inputs.prev_build }}
+          NEXT_BUILD: ${{ github.event.inputs.next_build }}
+        run: |
+          set -euo pipefail
+
+          workdir="$RUNNER_TEMP/extract"
+          mkdir -p "$workdir"
+
+          for build in "$PREV_BUILD" "$NEXT_BUILD"; do
+            echo "::group::Processing build $build"
+
+            ipsw_dir="$workdir/$build"
+            mkdir -p "$ipsw_dir"
+            ipsw dl appledb --os iOS --device "$DEVICE" --build "$build" --output "$ipsw_dir" --confirm
+
+            rootfs_dir="$ipsw_dir/rootfs"
+            echo "Extracting rootfs from $ipsw_dir/*.ipsw ..."
+            ipsw extract -o "$rootfs_dir" "$ipsw_dir"/*.ipsw
+
+            cache_file="$rootfs_dir/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e"
+            if [ ! -f "$cache_file" ]; then
+              echo "::error::dyld_shared_cache_arm64e not found in $rootfs_dir"
+              exit 1
+            fi
+
+            cache_out="$workdir/${build}_cache_extracted"
+            mkdir -p "$cache_out"
+            echo "Extracting dyld shared cache to $cache_out ..."
+            ipsw dyld extract "$cache_file" "$cache_out"
+
+            staging="$workdir/${build}_staging"
+            mkdir -p "$staging"
+
+            files_to_copy=(
+              "System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation"
+              "usr/libexec/gamed"
+              "System/Library/Frameworks/GameStoreKit.framework/GameStoreKit"
+            )
+
+            for relpath in "${files_to_copy[@]}"; do
+              src="$cache_out/$relpath"
+              if [ -f "$src" ]; then
+                dst_dir="$staging/$(dirname "$relpath")"
+                mkdir -p "$dst_dir"
+                cp -p "$src" "$dst_dir/"
+                echo "Copied $relpath"
+              else
+                echo "::warning::$relpath not found in cache for build $build"
+              fi
+            done
+
+            (cd "$staging" && zip -r "../${build}_files.zip" .)
+            echo "::endgroup::"
+          done
+
+          mkdir -p "$RUNNER_TEMP/artifacts"
+          cp "$workdir"/*_files.zip "$RUNNER_TEMP/artifacts/"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@b6ffbe1ab6b0edf260d7a0d74b3641663a9d9785 # v4.3.0
+        with:
+          name: extracted_files
+          path: ${{ runner.temp }}/artifacts/*.zip
+          retention-days: 7
