@@ -128,11 +128,11 @@ jobs:
             staging="$workdir/${build}_staging"
             mkdir -p "$staging"
             echo "Extracting target images from dyld shared cache ..."
-            ipsw dsc ida "$cache_file" \
+            ipsw dsc extract "$cache_file" \
               /System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation \
               /usr/libexec/gamed \
               /System/Library/Frameworks/GameStoreKit.framework/GameStoreKit \
-              --output "$staging"
+              --output "$staging" --force --slide
               
             clean_staging="$workdir/${build}_clean"
             mkdir -p "$clean_staging"
