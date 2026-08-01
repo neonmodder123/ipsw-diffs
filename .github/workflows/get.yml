@@ -30,12 +30,12 @@ jobs:
     timeout-minutes: 180
     steps:
       - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 1
 
       - name: Free up disk space
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
+        uses: jlumbroso/free-disk-space@v1.3.1
         with:
           tool-cache: true
           swap-storage: false
@@ -149,7 +149,7 @@ jobs:
           cp "$workdir"/*_files.zip "$RUNNER_TEMP/artifacts/"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@b6ffbe1ab6b0edf260d7a0d74b3641663a9d9785 # v4.3.0
+        uses: actions/upload-artifact@v4.3.0
         with:
           name: extracted_files
           path: ${{ runner.temp }}/artifacts/*.zip
