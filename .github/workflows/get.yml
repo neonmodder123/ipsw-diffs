@@ -107,7 +107,7 @@ jobs:
 
             rootfs_dir="$ipsw_dir/rootfs"
             echo "Extracting rootfs from $ipsw_dir/*.ipsw ..."
-            ipsw extract -o "$rootfs_dir" "$ipsw_dir"/*.ipsw
+            ipsw extract --files -o "$rootfs_dir" "$ipsw_dir"/*.ipsw
 
             cache_file="$rootfs_dir/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e"
             if [ ! -f "$cache_file" ]; then
