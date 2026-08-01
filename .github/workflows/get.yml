@@ -105,9 +105,15 @@ jobs:
             mkdir -p "$ipsw_dir"
             ipsw dl appledb --os iOS --device "$DEVICE" --build "$build" --output "$ipsw_dir" --confirm
 
+            ipsw_file=$(ls "$ipsw_dir"/*.ipsw | head -1)
+            if [ -z "$ipsw_file" ]; then
+              echo "::error::No IPSW file found in $ipsw_dir"
+              exit 1
+            fi
+
             rootfs_dir="$ipsw_dir/rootfs"
-            echo "Extracting rootfs from $ipsw_dir/*.ipsw ..."
-            ipsw extract --files -o "$rootfs_dir" "$ipsw_dir"/*.ipsw
+            echo "Extracting rootfs from $ipsw_file ..."
+            ipsw extract --files -o "$rootfs_dir" "$ipsw_file"
 
             cache_file="$rootfs_dir/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e"
             if [ ! -f "$cache_file" ]; then
@@ -115,33 +121,34 @@ jobs:
               exit 1
             fi
 
-            cache_out="$workdir/${build}_cache_extracted"
-            mkdir -p "$cache_out"
-            echo "Extracting dyld shared cache to $cache_out ..."
-            ipsw dyld extract "$cache_file" "$cache_out"
-
             staging="$workdir/${build}_staging"
             mkdir -p "$staging"
+            echo "Extracting target images from dyld shared cache ..."
+            ipsw dsc ida "$cache_file" \
+              /System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation \
+              /usr/libexec/gamed \
+              /System/Library/Frameworks/GameStoreKit.framework/GameStoreKit \
+              --output "$staging"
+              
+            clean_staging="$workdir/${build}_clean"
+            mkdir -p "$clean_staging"
 
-            files_to_copy=(
-              "System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation"
-              "usr/libexec/gamed"
-              "System/Library/Frameworks/GameStoreKit.framework/GameStoreKit"
-            )
-
-            for relpath in "${files_to_copy[@]}"; do
-              src="$cache_out/$relpath"
-              if [ -f "$src" ]; then
-                dst_dir="$staging/$(dirname "$relpath")"
-                mkdir -p "$dst_dir"
-                cp -p "$src" "$dst_dir/"
-                echo "Copied $relpath"
+            for relpath in "System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation" \
+                            "usr/libexec/gamed" \
+                            "System/Library/Frameworks/GameStoreKit.framework/GameStoreKit"; do
+              base=$(basename "$relpath")
+              found_file=$(find "$staging" -type f -name "$base" | head -1)
+              if [ -n "$found_file" ]; then
+                dest="$clean_staging/$relpath"
+                mkdir -p "$(dirname "$dest")"
+                cp -p "$found_file" "$dest"
+                echo "Extracted $relpath"
               else
-                echo "::warning::$relpath not found in cache for build $build"
+                echo "::warning::Could not find $base in $staging"
               fi
             done
 
-            (cd "$staging" && zip -r "../${build}_files.zip" .)
+            (cd "$clean_staging" && zip -r "../${build}_files.zip" .)
             echo "::endgroup::"
           done
 
