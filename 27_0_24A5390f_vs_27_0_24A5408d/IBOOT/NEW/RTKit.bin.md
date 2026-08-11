@@ -1,0 +1,56 @@
+## RTKit.bin
+
+- `ui8NfcPowerPause: write`
+- `smc/miscworkloop.cpp`
+- `nfcEvent_NoPowerScanTimer: state:%d`
+- `nfcHandleMessage: messageType:%d`
+- `nfcEvent_ScanCompleted: state:%d, gNfcStateAfterScan:%d`
+- `schedule re-scan for power pause`
+- `ui8NfcState: read`
+- `ui8NfcDisplayState: read`
+- `Unknown panic trigger interrupt #%u`
+- `ui8NfcControllerReady called for unrecognized key: 0x%X`
+- `smc/panic.cpp`
+- `ui8NfcPowerPause called for unrecognized key: 0x%X`
+- `nfcHandleMessage: messageType: ironmanMessage_Power(%d) state:%d`
+- `smc/iphone/pmu_adc_amuxa.cpp`
+- `ui8NfcControllerReady: write`
+- `ui8NfcDisplayState: write: state:%d, power:%d`
+- `nfcEvent_PowerPauseSecondScanTimer`
+- `smc/key_tree.cpp`
+- `%s: scan in power pause`
+- `ui8NfcDisplayState called for unrecognized key: 0x%X`
+- `ui8NfcDisplayState: write: state:%d`
+- `nfcHandleMessage: messageType: ironmanMessage_NoPower: state:%d`
+- `Ensuring that AP is awake`
+- `ui8NfcPowerPause: ironmanMessage_RequestPowerPause`
+- `smc/inductive/poutPolicy.cpp`
+- `ui8NfcTagsList: read`
+- `nfcHandleMessage: messageType: ironmanMessage_NoPower: scan later`
+- `nfcHandleMessage: messageType: ironmanMessage_ReadyForNfc`
+- `scan completed outside of power pause`
+- `Unknown panic action %u`
+- `nfcEvent_PowerPauseStarted`
+- `PMU: vPmuAdcSensorsReadCycle() failed to read adc 0x%x rc=%d`
+- `getInitialPoutMax`
+- `%s: gNfcState:%d`
+- `POP: %s: reset not done; lazy reset`
+- `ui8MagnetEvent called for unrecognized key: 0x%X`
+- `ui8NfcState called for unrecognized key: 0x%X`
+- `nductiveTxLogFreebuf`
+- `ui8MagnetEvent: write: state:%d`
+- `nfcEvent_ScanStarted:%d`
+- `ui8NfcState: write`
+- `nfcHandleMessage: messageType: ironmanMessage_Power: idle later`
+- `scanTimeoutHandlerstate:%d`
+- `%s: scan later`
+- `Remotely triggered SMC panic`
+- `POP: ovr:%lld h:%d chg=%d soc:%d t:%d isAL=%d pMax=%d pCalc=%lld thrm=%d%% pCfg=%lld`
+- `smc/iphone/nfc.cpp`
+- `ui8NfcControllerReady: write: power:%d`
+- `ui8NfcDisplayState: write: state:%d, gNfcDisplayOn:%d`
+- `Panic trigger received on interrupt #%u`
+- `POP: %s: adP=%d pct=%d initPoutMax=%d`
+- `ui8NfcControllerReady: write: power:%d, scan`
+- `ui8NfcTagsList: write: gNfcTagsList.value:0x%x, gLastMessageType:%d`
+- `ui8NfcTagsList called for unrecognized key: 0x%X`

@@ -1,0 +1,57 @@
+## iboot_blob35.bin
+
+- `nfcHandleMessage: messageType: ironmanMessage_Power(%d) state:%d`
+- `nfcHandleMessage: messageType: ironmanMessage_NoPower: scan later`
+- `Panic trigger received on interrupt #%u`
+- `ui8NfcPowerPause: ironmanMessage_RequestPowerPause`
+- `ui8NfcDisplayState: write: state:%d, gNfcDisplayOn:%d`
+- `nfcEvent_PowerPauseStarted`
+- `smc/iphone/nfc.cpp`
+- `%s: gNfcState:%d`
+- `smc/iphone/pmu_adc_amuxa.cpp`
+- `%s: upo_state=%d, clearUPOConConnect=%d`
+- `ui8NfcTagsList: write: gNfcTagsList.value:0x%x, gLastMessageType:%d`
+- `POP: ovr:%lld h:%d chg=%d soc:%d t:%d isAL=%d pMax=%d pCalc=%lld thrm=%d%% pCfg=%lld`
+- `%s: scan in power pause`
+- `ui8NfcPowerPause called for unrecognized key: 0x%X`
+- `Unknown panic action %u`
+- `schedule re-scan for power pause`
+- `nfcEvent_PowerPauseSecondScanTimer`
+- `nfcEvent_ScanCompleted: state:%d, gNfcStateAfterScan:%d`
+- `nfcHandleMessage: messageType: ironmanMessage_Power: idle later`
+- `PMU: vPmuAdcSensorsReadCycle() failed to read adc 0x%x rc=%d`
+- `nfcHandleMessage: messageType: ironmanMessage_ReadyForNfc`
+- `getInitialPoutMax`
+- `ui8NfcPowerPause: write`
+- `Remotely triggered SMC panic`
+- `nfcHandleMessage: messageType: ironmanMessage_NoPower: state:%d`
+- `scanTimeoutHandlerstate:%d`
+- `Unknown panic trigger interrupt #%u`
+- `ui8NfcTagsList called for unrecognized key: 0x%X`
+- `ui8NfcDisplayState: write: state:%d, power:%d`
+- `InductiveTxLogFreebuf`
+- `smc/inductive/poutPolicy.cpp`
+- `ui8MagnetEvent called for unrecognized key: 0x%X`
+- `ui8NfcControllerReady: write: power:%d, scan`
+- `POP: %s: reset not done; lazy reset`
+- `ui8NfcControllerReady: write: power:%d`
+- `scan completed outside of power pause`
+- `ui8NfcControllerReady: write`
+- `ui8NfcState: write`
+- `ui8NfcTagsList: read`
+- `nfcEvent_ScanStarted:%d`
+- `nfcEvent_NoPowerScanTimer: state:%d`
+- `ui8MagnetEvent: write: state:%d`
+- `ui8NfcControllerReady called for unrecognized key: 0x%X`
+- `nfcHandleMessage: messageType:%d`
+- `POP: %s: adP=%d pct=%d initPoutMax=%d`
+- `smc/key_tree.cpp`
+- `ui8NfcState called for unrecognized key: 0x%X`
+- `%s: scan later`
+- ` Migration successful (v0x%04x -> v0x%04x)`
+- `smc/miscworkloop.cpp`
+- `ui8NfcDisplayState: read`
+- `smc/panic.cpp`
+- `ui8NfcState: read`
+- `ui8NfcDisplayState called for unrecognized key: 0x%X`
+- `ui8NfcDisplayState: write: state:%d`

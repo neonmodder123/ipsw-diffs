@@ -1,0 +1,48 @@
+## iboot_blob34.bin
+
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/signalConvert.cpp`
+- `no response available fifo_avail 0x%x ext header 0x%x, status 0x%x`
+- `charger_drv_set_charger`
+- `charger failed to enable pll sync rc:%d`
+- `wrong response type:%d, id:0x%x (expected:0x%x)`
+- `%s: exception, st %d->%d`
+- `charger failed to read SYSTEM_CONFIG_1 FREQ_DITHER rc:%d`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/mux.cpp`
+- `smc/bms/v1/battery_low_voltage_residency/battery_low_voltage_residency.`
+- `AON PTD Update for Id = %c%c%c%c, msg = 0x%llx, metadata = 0x%llx `
+- `/src/maxMinRC.cpp`
+- `bpic_write: SPMI error: %x`
+- `Failed to read dc limiter register, rc:%d`
+- `Wrong offset provided to int signalStore`
+- `MVR TEMP mDegC: %d`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/signalStore.cpp`
+- `charger failed to disable SYSTEM_CONFIG_1 FREQ_DITHER`
+- `%s: Waikato wrong comm page:%d`
+- `%s: error reading Waikato page, rc:0x%x`
+- `ERROR: ibat max is more than 0xFF (%d)`
+- `%s: error setting Waikato page to 0, rc:0x%x`
+- `drivers/devices/gapf.cpp`
+- `drivers/devices/aon_ptd.cpp`
+- `charger failed to unlock test mode rc:%d OTP:%x HW:%x`
+- `AON PTD GAPF start_addr = %llx, size = %llx `
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/utility.cpp`
+- `no response available fifo_avail 0x%x, header 0x%x, status 0x%x`
+- `charger_drv_communication_page_check`
+- `charger failed to disable CC loop active clamp rc:%d`
+- `charger failed to write SYSTEM_CONFIG_1 FREQ_DITHER rc:%d`
+- `charger failed to read WAIKATO_CC_LOOP_CLAMP_CTRL rc:%d`
+- `charger failed to lock test mode rc:%d`
+- `charger failed to apply VBUS OV mitigation rc:%d`
+- `lc_process_mbox_result_status`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/referenceTargetRC.cpp`
+- `Wrong offset provided to float signalStore`
+- `charger failed to enable improvement to CC-ILIM handoff rc:%d`
+- `charger failed to disable DCR chopping rc:%d`
+- `Unable to update VLIM voltage threshold:%d`
+- `drivers/charger/v1/waikato/drv_waikato_charger.cpp`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/singlePoleFilter.cpp`
+- `periodic: set not yet complete rc=%d, will retry next tick`
+- `RECT TEMP mDegC: %d`
+- `vAONPTDTask: woke by unknown semaphore`
+- `drivers/devices/awl_bus.cpp`
+- `%s: TARGET_VALID=%d, rc:0x%x`

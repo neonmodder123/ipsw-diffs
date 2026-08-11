@@ -1,0 +1,40 @@
+## iboot_blob35.bin
+
+- `%s: %s:%d: %s, Unable to disable interrupt for pack %d, PTD 0x%08x: %d`
+- `Failed to initialize LVR for pack %d: rc = %u`
+- `%s: upo_state=%d, clear_upo_on_connect=%d`
+- `BMSScratchpad: Not initialized, call init() first`
+- `BMSScratchpad: Failed to mirror key=%d to legacy region (rc=%d)`
+- `BMSScratchpad: Migration successful (v0x%04x -> v0x%04x)`
+- `BMSScratchpad: Checksum verification failed, zeroing scratchpad`
+- `Unable to set handler for pack %d, PTD region 0x%08x: rc = %u`
+- `ULTRA: allow_crx_switching=%u txVBoostMax=%u vBoostMaxReached=%u crx_power_target_limit=%u`
+- `BMSScratchpad: Performing migration from version 0x%04x to 0x%04x`
+- `%s: wq full, drop:%d`
+- `%s: %s:%d: %s, Unable to enable interrupt for pack %d, PTD 0x%08x: %d`
+- `BMSScratchpad: Failed to read BMSS region (rc=%d), zeroing scratchpad`
+- `LVR interrupt for unknown PTD region: 0x%08x`
+- `BMSScratchpad: Valid BMSS data found (version=0x%04x)`
+- `BMSScratchpad: BMSS region supported (size=%u bytes)`
+- `BMSScratchpad: BMSS region not supported, using legacy mode`
+- `BMSScratchpad: Write count (%u) exceeds field size (%u), truncating`
+- `BMSScratchpad: Old version detected (0x%04x), migrating to 0x%04x`
+- `BMSScratchpad: Read count (%u) exceeds field size (%u), truncating`
+- `BMSScratchpad: key=%d mismatch between BMSS and legacy regions`
+- `Unable to get data from AON PTD for pack %d, PTD 0x%08x: rc:%u`
+- `BMSScratchpad: Future version detected (0x%04x > 0x%04x), zeroing`
+- `inductiveCL: crx_tgt_pwr=%dmW, rampdown_pwr=%dmW (stepdown=%dmW), vrect_target=%dmV`
+- `BMSScratchpad: Failed to write migrated data (rc=%d)`
+- `BMSScratchpad: read_bmss_region called with null PMU`
+- `Unable to enable interrupt for pack %d, PTD region 0x%08x: rc = %u`
+- `ULTRA: hv_gate=%u 9W_time=%llu 7W_time=%llu`
+- `BMSScratchpad: Migration failed, zeroing scratchpad`
+- `BMSScratchpad: Failed to write zeroed BMSS region (rc=%d)`
+- `BMSScratchpad: Unknown key for BMSS read`
+- `frc == RTK_ST_OK`
+- `BMSScratchpad: write_bmss_region called with null PMU`
+- `BMSScratchpad: Unknown key for BMSS write`
+- `rc_irq == RTK_ST_OK`
+- `BMSScratchpad: Uninitialized, initializing with version 0x%04x`
+- `BMSScratchpad: Unsupported version 0x%04x`
+- `BMSScratchpad: Failed to read key=%d from legacy region (rc=%d)`
