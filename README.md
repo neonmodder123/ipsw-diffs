@@ -56,6 +56,7 @@
 <details open>
   <summary>View diffs</summary>
 
+- [27.0 beta 7 (24A5424a) .vs 27.0 beta 8 (24A5430a)](27_0_24A5424a_vs_27_0_24A5430a/README.md)
 - [27.0 beta 5 (24A5408d) .vs 27.0 beta 7 (24A5424a)](27_0_24A5408d_vs_27_0_24A5424a/README.md)
 - [27.0 beta 4 (24A5390f) .vs 27.0 beta 5 (24A5408d)](27_0_24A5390f_vs_27_0_24A5408d/README.md)
 - [27.0 beta 3 (24A5380h) .vs 27.0 beta 4 (24A5390f)](27_0_24A5380h_vs_27_0_24A5390f/README.md)
