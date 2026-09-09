@@ -7,6 +7,7 @@
 ## DIFFS
 
 <p><strong>Quick Nav:</strong>
+<a href="#ios-27-0">iOS 27.0</a> ·
 <a href="#ios-26-6">iOS 26.6</a> ·
 <a href="#ios-27-0-beta">iOS 27.0 beta</a> ·
 <a href="#ios-26-6-beta">iOS 26.6 beta</a> ·
@@ -612,6 +613,15 @@
   <summary>View diffs</summary>
 
 - [26.6 beta 3 (25G5052e) .vs 26.6 (25G72)](26_6_25G5052e_vs_26_6_25G72/README.md)
+
+</details>
+
+<a id="ios-27-0"></a>
+### iOS 27.0
+<details open>
+  <summary>View diffs</summary>
+
+- [27.0 beta 8 (24A5430a) .vs 27.0 RC (24A435)](27_0_24A5430a_vs_27_0_24A435/README.md)
 
 </details>
 
