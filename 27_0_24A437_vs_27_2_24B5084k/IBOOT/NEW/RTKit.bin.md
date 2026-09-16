@@ -1,0 +1,25 @@
+## RTKit.bin
+
+- `InductiveTxDSEvent`
+- `TXDS: %s: [%d %d]`
+- `TXDS: [%d %d]`
+- `RS: kHostTxIdentification; dev_type=0x%x fmly=%d prot=%d qi_ver=0x%x qpp_ver=0x%x`
+- `TXDS: %s: stream %d already in progress; skip`
+- `InductiveSetPowerOutCapability`
+- `InductiveTxSendData`
+- `TXDS: st_pout_tx_start_transfer failed with ret=%d`
+- `TXDS: rmerr queue %d`
+- `%s: cap=0x%x, tx_freq_mask=0x%x`
+- `%s: failed to send free log buf signal (ret=%d)`
+- `TXDS: fw failed to transmit all data in stream=%d`
+- `TXDS: spmi write to 0x%08X: from entry %d bytes %d`
+- `TXDS: error: InductiveTxGetTxStreamEntry error; ret=%d`
+- `TXDS: pout_tx_alloc_stream failed with ret=%d`
+- `InductiveTxResetTxStreams`
+- `RS: %s: InductiveTxGetRxSoC: remote_soc change: %d -> %d`
+- `TXDS: deque tx pkt: stream=%d start=%d end=%d bytes=%d`
+- `TXDS: InductiveTxAddToTxStream failed with ret=%d`
+- `TXDS: %s: error: unknown evt = %d`
+- `RS: kHostTxChimeDecision: dcsn=%d prm=%d`
+- `InductiveTxLogFreebuf`
+- `expected data stream size`

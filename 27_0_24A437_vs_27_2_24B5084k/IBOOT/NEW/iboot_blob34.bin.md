@@ -1,0 +1,28 @@
+## iboot_blob34.bin
+
+- `vla_bound_not_positive`
+- `genericController was not provided either error or added/subtracted signals`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/accumulator.cpp`
+- `genericController sampling time is 0, which is incorrect`
+- `invalid_value`
+- `sub_overflow`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/acBlock.cpp`
+- `nonnull_return`
+- `alignment_assumption`
+- `shift_out_of_bounds`
+- `out_of_bounds`
+- `nullability_arg`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/booleanLogic.cpp`
+- `missing_return`
+- `mul_overflow`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/delay.cpp`
+- `UBSAN triggered SMC panic: unknown`
+- `negate_overflow`
+- `nonnull_arg`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/genericController.cpp`
+- `periodic: set not yet complete rc=%d, `
+- `UBSAN triggered SMC panic: %s`
+- `pointer_overflow`
+- `type_mismatch`
+- `nullability_return`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/maxMinRC.cpp`

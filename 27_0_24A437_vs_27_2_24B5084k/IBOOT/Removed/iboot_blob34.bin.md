@@ -1,0 +1,22 @@
+## iboot_blob34.bin
+
+- `BATTAUTH: task out of sync`
+- `periodic: set not yet complete rc=%d, will retry next tick`
+- `smc/bms/v1/batterySocFilter/batterySocFilter.cpp`
+- `/src/maxMinRC.cpp`
+- `BATTAUTH: Invalid key %x`
+- `%s supportIgnoreShutdownDueToFullPowerAdapter asserted, shutdown ignored`
+- `%s GGShutdownFlag asserted, shutdown requested`
+- `batteryShutdownPolicy:`
+- `Boot data log BLC:%d`
+- `smc/bms/v1/battery_low_voltage_residency/battery_low_voltage_residency.`
+- `BATTAUTH: op:rc:%d, err:%d`
+- `%s supportIgnoreShutdownDueToAdapterConnected asserted, shutdown ignored`
+- `%s supportIgnoreShutdownDueToInstantBoot asserted, shutdown ignored`
+- `BATTAUTH: auth IC communication failure (%x)`
+- `%s supportSmcPolicyBatteryShutdown asserted, shutdown requested`
+- `%s supportCellVoltageShutdown asserted, shutdown requested`
+- `BATTAUTH: invalid command '%u'`
+- `Unable to read battery boot up flag rc:%d`
+- `BATTAUTH: kick out of sync`
+- `BATTAUTH: invalid op %d`
