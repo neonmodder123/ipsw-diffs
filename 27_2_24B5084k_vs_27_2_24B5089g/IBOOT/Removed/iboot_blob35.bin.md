@@ -1,0 +1,26 @@
+## iboot_blob35.bin
+
+- `smc/inductive/inductive_tx.cpp`
+- `InductiveTxApplyBootFlagsFromFW`
+- `TXDS: notify AP: comms resumed`
+- `will retry next tick`
+- `InductiveEnablePeriodicTimer`
+- `RS: TX FW state moved to Idle`
+- `%s: 0x%x -> 0x%x`
+- `RXIC Woke Up`
+- `%s:%d sema but no work %x`
+- `vInductiveProcessWork`
+- `%s:%d:tx:read_status failed; reset inductive ic`
+- `tx assert triggered!`
+- `TXDS: notify AP: comms paused`
+- `InductiveTxUpdate`
+- `TXDS: notify AP: comms disabled; comms paused`
+- `TXDS: %s: un`
+- `InductiveTxStreamControlRxInd`
+- `InductiveTxProcessRxInd`
+- `TXDS: notify AP: comms enabled`
+- `%s:%d fail reply q: %x %x %x %x`
+- `vInductiveTaskStop fail`
+- `%s:tx:haltReason %d -> %d`
+- `TXDS: %s: terminated transactions due to disconnect`
+- `TXDS: %s: stream_id=%d out of range`

@@ -1,0 +1,26 @@
+## iboot_blob34.bin
+
+- `float_cast_overflow`
+- `las_tunableh_module_evaluate`
+- `las_tunableh_write`
+- `dynamic_type_cache_miss`
+- `las_tunableh_get_fig() == NULL`
+- `cfi_check_fail`
+- `function_type_mismatch`
+- `(AWL) ERROR: Failed to read ace regis`
+- `las_tunableh_init`
+- `implicit_conversion`
+- `las_tunableh_fig_get_expression`
+- `las_tunableh_apply`
+- `las_tunableh_fig_get_mask`
+- `/Library/Caches/com.apple.xbs/6EA746B2-1359-48FE-9810-8DEE01D7C211/TemporaryDirectory.fuIzNy/Sources/libAppleSilicon/tunableh/v1/tunableh.c`
+- `add_overflow`
+- `invalid_objc_cast`
+- `load_invalid_value`
+- `las_tunableh_read`
+- `las_tunableh_fig_get_value`
+- `divrem_overflow`
+- `%s:%d:%s: %s`
+- `builtin_unreachable`
+- `!las_tunableh_initialized()`
+- `invalid_builtin`
