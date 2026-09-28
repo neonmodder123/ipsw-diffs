@@ -1,0 +1,46 @@
+## iboot_blob35.bin
+
+- `TXDS: %s: error: unknown evt = %d`
+- `RS: %s: InductiveTxGetRxSoC: remote_soc change: %d -> %d`
+- `TXDS: %s: [%d %d]`
+- `%s: failed to send free log buf signal (ret=%d)`
+- `TXDS: notify AP: comms disabled; comms paused`
+- `RS: kHostTxIdentification; dev_type=0x%x fmly=%d prot=%d qi_ver=0x%x qpp_ver=0x%x`
+- `%s:%d sema but no work %x`
+- `InductiveTxApplyBootFlagsFromFW`
+- `%s:%d:tx:read_status failed; reset inductive ic`
+- `RS: kHostTxChimeDecision: dcsn=%d prm=%d`
+- `%s:tx:haltReason %d -> %d`
+- `TXDS: pout_tx_alloc_stream failed with ret=%d`
+- `TXDS: notify AP: comms paused`
+- `TXDS: %s: unexpected data stream size`
+- `TXDS: error: InductiveTxGetTxStreamEntry error; ret=%d`
+- `InductiveTxSendData`
+- `InductiveTxStreamControlRxInd`
+- `TXDS: fw failed to transmit all data in stream=%d`
+- `TXDS: InductiveTxAddToTxStream failed with ret=%d`
+- `vInductiveTaskStop fail`
+- `%s: 0x%x -> 0x%x`
+- `InductiveTxUpdate`
+- `InductiveTxDSEvent`
+- `TXDS: deque tx pkt: stream=%d start=%d end=%d bytes=%d`
+- `RXIC Woke Up`
+- `%s:%d fail reply q: %x %x %x %x`
+- `InductiveSetPowerOutCapability`
+- `TXDS: notify AP: comms resumed`
+- `TXDS: %s: stream_id=%d out of range`
+- `TXDS: st_pout_tx_start_transfer failed with ret=%d`
+- `vInductiveProcessWork`
+- `TXDS: notify AP: comms enabled`
+- `InductiveEnablePeriodicTimer`
+- `TXDS: %s: stream %d already in progress; skip`
+- `TXDS: spmi write to 0x%08X: from entry %d bytes %d`
+- `TXDS: [%d %d]`
+- `%s: cap=0x%x, tx_freq_mask=0x%x`
+- `TXDS: %s: terminated transactions due to disconnect`
+- `TXDS: rmerr queue %d`
+- `RS: TX FW state moved to Idle`
+- `InductiveTxProcessRxInd`
+- `InductiveTxResetTxStreams`
+- `tx assert triggered!`
+- `smc/inductive/inductive_tx.cpp`

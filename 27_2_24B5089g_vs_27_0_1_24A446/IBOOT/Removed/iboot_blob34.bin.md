@@ -1,0 +1,50 @@
+## iboot_blob34.bin
+
+- `missing_return`
+- `dynamic_type_cache_miss`
+- `UBSAN triggered SMC panic: unknown`
+- `implicit_conversion`
+- `alignment_assumption`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/accumulator.cpp`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/acBlock.cpp`
+- `vla_bound_not_positive`
+- `invalid_builtin`
+- `las_tunableh_fig_get_value`
+- `float_cast_overflow`
+- `genericController was not provided either error or added/subtracted signals`
+- `nullability_arg`
+- `las_tunableh_fig_get_mask`
+- `load_invalid_value`
+- `negate_overflow`
+- `las_tunableh_init`
+- `las_tunableh_apply`
+- `las_tunableh_module_evaluate`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/delay.cpp`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/maxMinRC.cpp`
+- `out_of_bounds`
+- `nullability_return`
+- `cfi_check_fail`
+- `UBSAN triggered SMC panic: %s`
+- `(AWL) ERROR: Failed to read ace regis`
+- `las_tunableh_fig_get_expression`
+- `/Library/Caches/com.apple.xbs/6EA746B2-1359-48FE-9810-8DEE01D7C211/TemporaryDirectory.fuIzNy/Sources/libAppleSilicon/tunableh/v1/tunableh.c`
+- `mul_overflow`
+- `sub_overflow`
+- `las_tunableh_read`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/genericController.cpp`
+- `!las_tunableh_initialized()`
+- `shift_out_of_bounds`
+- `function_type_mismatch`
+- `divrem_overflow`
+- `las_tunableh_get_fig() == NULL`
+- `builtin_unreachable`
+- `nonnull_return`
+- `las_tunableh_write`
+- `genericController sampling time is 0, which is incorrect`
+- `invalid_objc_cast`
+- `type_mismatch`
+- `add_overflow`
+- `pointer_overflow`
+- `%s:%d:%s: %s`
+- `nonnull_arg`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/booleanLogic.cpp`

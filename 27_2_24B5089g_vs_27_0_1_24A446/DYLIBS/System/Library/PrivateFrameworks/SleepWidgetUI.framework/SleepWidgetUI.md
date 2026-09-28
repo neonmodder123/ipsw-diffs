@@ -1,0 +1,71 @@
+## SleepWidgetUI
+
+> `/System/Library/PrivateFrameworks/SleepWidgetUI.framework/SleepWidgetUI`
+
+```diff
+
+-7027.1.45.2.4
+-  __TEXT.__text: 0x74d68
++7027.0.72.2.8
++  __TEXT.__text: 0x74f80
+   __TEXT.__const: 0x3f64
+   __TEXT.__constg_swiftt: 0x16f0
+   __TEXT.__swift5_typeref: 0x1a74
+
+   __TEXT.__objc_classname: 0x0
+   __TEXT.__objc_methname: 0x0
+   __TEXT.__objc_methtype: 0x0
+-  __DATA_CONST.__const: 0x108
++  __DATA_CONST.__const: 0xf8
+   __DATA_CONST.__objc_classlist: 0x10
+   __DATA_CONST.__objc_imageinfo: 0x8
+-  __DATA_CONST.__objc_selrefs: 0x138
++  __DATA_CONST.__objc_selrefs: 0x148
+   __DATA_CONST.__got: 0x950
+   __AUTH_CONST.__const: 0x1870
+   __AUTH_CONST.__objc_const: 0x120
+-  __AUTH_CONST.__auth_got: 0x1140
++  __AUTH_CONST.__auth_got: 0x1138
+   __AUTH.__data: 0x788
+   __DATA.__data: 0xae0
+   __DATA.__bss: 0xc90
+
+   - /System/Library/PrivateFrameworks/SleepHealthUI.framework/SleepHealthUI
+   - /usr/lib/libSystem.B.dylib
+   - /usr/lib/libobjc.A.dylib
+-  - /usr/lib/swift/libswiftAVFoundation.dylib
+   - /usr/lib/swift/libswiftAccelerate.dylib
+   - /usr/lib/swift/libswiftAppleArchive.dylib
+   - /usr/lib/swift/libswiftCompression.dylib
+
+   - /usr/lib/swift/libswiftDispatch.dylib
+   - /usr/lib/swift/libswiftGLKit.dylib
+   - /usr/lib/swift/libswiftIntents.dylib
+-  - /usr/lib/swift/libswiftMLCompute.dylib
+   - /usr/lib/swift/libswiftMetal.dylib
+   - /usr/lib/swift/libswiftMetalKit.dylib
+   - /usr/lib/swift/libswiftModelIO.dylib
+
+   - /usr/lib/swift/libswiftos.dylib
+   - /usr/lib/swift/libswiftsimd.dylib
+   Functions: 2329
+-  Symbols:   654
++  Symbols:   649
+   CStrings:  137
+ 
+Symbols:
+- __swift_FORCE_LOAD_$_swiftAVFoundation
+- __swift_FORCE_LOAD_$_swiftAVFoundation_$_SleepWidgetUI
+- __swift_FORCE_LOAD_$_swiftMLCompute
+- __swift_FORCE_LOAD_$_swiftMLCompute_$_SleepWidgetUI
+- _swift_retain_x27
+Functions:
+~ sub_2b1ccb8bc -> sub_2ab5e482c : 1000 -> 1108
+~ sub_2b1cd1214 -> sub_2ab5ea1f0 : 3100 -> 3136
+~ sub_2b1cd5a04 -> sub_2ab5eea04 : 2664 -> 2676
+~ sub_2b1cda368 -> sub_2ab5f3374 : 2604 -> 2616
+~ sub_2b1cdfc80 -> sub_2ab5f8c98 : 712 -> 816
+~ sub_2b1cea710 -> sub_2ab603790 : 4852 -> 4924
+~ sub_2b1ceba04 -> sub_2ab604acc : 4428 -> 4504
+~ sub_2b1cedecc -> sub_2ab606fe0 : 1488 -> 1604
+```
