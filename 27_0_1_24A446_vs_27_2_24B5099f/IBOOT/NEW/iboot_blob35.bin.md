@@ -1,0 +1,41 @@
+## iboot_blob35.bin
+
+- `(AWL) ERROR: Failed to read APB register 0x%06llx over AWL`
+- `batteryShutdownPolicy:`
+- `BATTAUTH: auth IC communication failure (%x)`
+- `%s supportIgnoreShutdownDueToAdapterConnected asserted, shutdown ignored`
+- `BATTAUTH: kick out of sync`
+- `DPLOSS,frt`
+- `(AWL) ERROR: Failed to configure the AWL HW (0x%08x)`
+- `not be performed`
+- `BATTAUTH: op:rc:%d, err:%d`
+- `%s supportCellVoltageShutdown asserted, shutdown requested`
+- `(AWL) ERROR: IPA read failed for register at addr %#llx`
+- `(AWL)  INFO: [%03zx]     %02x%02x`
+- `(AWL) ERROR: Couldn't read register of unsupported access type %d`
+- `(AWL)  INFO: New AWL Report (Type %d, Version %d, Size %zu)`
+- `(AWL) WARN: Failed to receive AWL response (0x%08x)`
+- `%s GGShutdownFlag asserted, shutdown requested`
+- `(AWL) ERROR: Failed to write report of size %zu at offset %#zx: %d`
+- `BATTAUTH: task out of sync`
+- `BATTAUTH: Invalid key %x`
+- `Boot data log BLC:%d`
+- `GG:[%d]V/I/T/Q:%d/%d/%d/%d,DOD/ChgAccum:%d/%d`
+- `smc/bms/v1/battery_low_voltage_residency/battery_low_voltage_residency.cpp`
+- `BATTAUTH: invalid op %d`
+- `(AWL)  INFO: [%03zx] %02x%02x%02x%02x`
+- `(AWL)  INFO: [%03zx]       %02x`
+- `%s supportSmcPolicyBatteryShutdown asserted, shutdown requested`
+- `%s:%d sq e`
+- `%s supportIgnoreShutdownDueToFullPowerAdapter asserted, shutdown ignored`
+- `(AWL)  INFO: [%03zx]   %02x%02x%02x`
+- `(AWL) ERROR: Unknown PS value %u`
+- `(AWL) ERROR: Failed to read ace register offset %#x, size %zu`
+- `(AWL) ERROR: Failed to send AWL request (0x%08x)`
+- `Unable to read battery boot up flag rc:%d`
+- `BATTAUTH: invalid command '%u'`
+- `(AWL) ERROR: %d`
+- `%s supportIgnoreShutdownDueToInstantBoot asserted, shutdown ignored`
+- `smc/bms/v1/batterySocFilter/batterySocFilter.cpp`
+- `periodic: set not yet complete rc=%d, will retry next tick`
+- `WLCH: ds buf[%d] hdr = 0; drop rcv data ind`

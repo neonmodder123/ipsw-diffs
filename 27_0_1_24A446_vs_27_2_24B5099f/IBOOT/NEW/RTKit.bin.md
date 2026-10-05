@@ -1,0 +1,52 @@
+## RTKit.bin
+
+- `tx assert triggered!`
+- `TXDS: spmi write to 0x%08X: from entry %d bytes %d`
+- `TXDS: notify AP: comms disabled; comms paused`
+- `TXDS: %s: error: unknown evt = %d`
+- `rr cmd %x ccode:%x code:%x`
+- `RS: TX FW state moved to Idle`
+- `TXDS: notify AP: comms paused`
+- `InductiveTxSendData`
+- `%s:%d cstat bad cmd %x %x %x %x`
+- `%s:%d sema but no work %x`
+- `InductiveSetPowerOutCapability`
+- `vInductiveTaskStop fail`
+- `TXDS: %s: terminated transactions due to disconnect`
+- `TXDS: rmerr queue %d`
+- `RS: kHostTxIdentification; dev_type=0x%x fmly=%d prot=%d qi_ver=0x%x qpp_ver=0x%x`
+- `TXDS: [%d %d]`
+- `TXDS: deque tx pkt: stream=%d start=%d end=%d bytes=%d`
+- `%s: cap=0x%x, tx_freq_mask=0x%x`
+- `TXDS: error: InductiveTxGetTxStreamEntry error; ret=%d`
+- `TXDS: st_pout_tx_start_transfer failed with ret=%d`
+- `%s:%d sq emp cmd %x %x %x`
+- `TXDS: %s: unexpected data stream size`
+- `vInductiveProcessWork`
+- `TXDS: InductiveTxAddToTxStream failed with ret=%d`
+- `%s:tx:haltReason %d -> %d`
+- `TXDS: %s: [%d %d]`
+- `InductiveTxProcessRxInd`
+- `%s:%d fail reply q: %x %x %x %x`
+- `smc/inductive/inductive_tx.cpp`
+- `%s:%d qc/t wrong: %d %x %x %x %x`
+- `RS: kHostTxChimeDecision: dcsn=%d prm=%d`
+- `%s:%d:tx:read_status failed; reset inductive ic`
+- `RXIC Woke Up`
+- `%s:%d ctrace cmd %x ccode:%x code:%x %x`
+- `InductiveTxLogFreebuf`
+- `%s: failed to send free log buf signal (ret=%d)`
+- `InductiveTxStreamControlRxInd`
+- `RS: %s: InductiveTxGetRxSoC: remote_soc change: %d -> %d`
+- `TXDS: fw failed to transmit all data in stream=%d`
+- `TXDS: %s: stream %d already in progress; skip`
+- `%s: 0x%x -> 0x%x`
+- `InductiveTxUpdate`
+- `TXDS: notify AP: comms resumed`
+- `InductiveTxResetTxStreams`
+- `TXDS: notify AP: comms enabled`
+- `InductiveTxApplyBootFlagsFromFW`
+- `TXDS: %s: stream_id=%d out of range`
+- `TXDS: pout_tx_alloc_stream failed with ret=%d`
+- `InductiveTxDSEvent`
+- `InductiveEnablePeriodicTimer`

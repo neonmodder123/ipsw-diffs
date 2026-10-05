@@ -1,0 +1,50 @@
+## iboot_blob34.bin
+
+- `genericController was not provided either error or added/subtracted signals`
+- `dynamic_type_cache_miss`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/genericController.cpp`
+- `vla_bound_not_positive`
+- `las_tunableh_module_evaluate`
+- `las_tunableh_fig_get_value`
+- `UBSAN triggered SMC panic: unknown`
+- `(AWL) ERROR: IPA read of size %zu can`
+- `las_tunableh_fig_get_expression`
+- `invalid_objc_cast`
+- `add_overflow`
+- `nullability_return`
+- `pointer_overflow`
+- `/Library/Caches/com.apple.xbs/FE0D62D7-1018-4864-9DDB-07DBB9918ABA/TemporaryDirectory.sVtRfo/Sources/libAppleSilicon/tunableh/v1/tunableh.c`
+- `las_tunableh_init`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/maxMinRC.cpp`
+- `divrem_overflow`
+- `implicit_conversion`
+- `float_cast_overflow`
+- `sub_overflow`
+- `cfi_check_fail`
+- `nonnull_arg`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/acBlock.cpp`
+- `las_tunableh_write`
+- `nullability_arg`
+- `!las_tunableh_initialized()`
+- `mul_overflow`
+- `las_tunableh_get_fig() == NULL`
+- `load_invalid_value`
+- `%s:%d:%s: %s`
+- `las_tunableh_read`
+- `las_tunableh_fig_get_mask`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/booleanLogic.cpp`
+- `genericController sampling time is 0, which is incorrect`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/accumulator.cpp`
+- `out_of_bounds`
+- `nonnull_return`
+- `UBSAN triggered SMC panic: %s`
+- `negate_overflow`
+- `type_mismatch`
+- `function_type_mismatch`
+- `invalid_builtin`
+- `missing_return`
+- `shift_out_of_bounds`
+- `builtin_unreachable`
+- `alignment_assumption`
+- `las_tunableh_apply`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/src/delay.cpp`

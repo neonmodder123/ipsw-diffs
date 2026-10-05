@@ -1,0 +1,495 @@
+## AppliedSensingFitness
+
+> `/System/Library/PrivateFrameworks/AppliedSensingFitness.framework/AppliedSensingFitness`
+
+```diff
+
+-25.0.1.0.0
+-  __TEXT.__text: 0xfac48
++27.0.8.0.0
++  __TEXT.__text: 0xdd444
+   __TEXT.__objc_methlist: 0x164
+-  __TEXT.__const: 0xebb8
+-  __TEXT.__swift5_typeref: 0x2faa
+-  __TEXT.__swift5_fieldmd: 0x60d8
+-  __TEXT.__constg_swiftt: 0x26d0
++  __TEXT.__const: 0xe088
++  __TEXT.__swift5_typeref: 0x2d10
++  __TEXT.__swift5_fieldmd: 0x5e08
++  __TEXT.__constg_swiftt: 0x2570
+   __TEXT.__swift5_builtin: 0x28
+-  __TEXT.__swift5_reflstr: 0x5122
+-  __TEXT.__swift5_assocty: 0x5b8
+-  __TEXT.__cstring: 0x5d86
+-  __TEXT.__swift5_capture: 0x514
+-  __TEXT.__swift5_protos: 0x24
+-  __TEXT.__swift5_proto: 0xca4
+-  __TEXT.__swift5_types: 0x458
+-  __TEXT.__swift_as_entry: 0x1b8
+-  __TEXT.__swift_as_cont: 0x208
+-  __TEXT.__oslogstring: 0xa6d
+-  __TEXT.__swift_as_ret: 0x1ac
+-  __TEXT.__unwind_info: 0x3428
+-  __TEXT.__eh_frame: 0x6308
++  __TEXT.__swift5_reflstr: 0x5062
++  __TEXT.__swift5_assocty: 0x5a0
++  __TEXT.__cstring: 0x60a6
++  __TEXT.__swift5_capture: 0x24c
++  __TEXT.__swift5_protos: 0x28
++  __TEXT.__swift5_proto: 0xc24
++  __TEXT.__swift5_types: 0x424
++  __TEXT.__swift_as_entry: 0xcc
++  __TEXT.__swift_as_cont: 0xc4
++  __TEXT.__oslogstring: 0x624
++  __TEXT.__swift_as_ret: 0xc4
++  __TEXT.__unwind_info: 0x2d98
++  __TEXT.__eh_frame: 0x4a88
+   __TEXT.__objc_stubs: 0x0
+   __TEXT.__auth_stubs: 0x0
+   __TEXT.__objc_classname: 0x0
+
+   __DATA_CONST.__const: 0x88
+   __DATA_CONST.__objc_classlist: 0x48
+   __DATA_CONST.__objc_imageinfo: 0x8
+-  __DATA_CONST.__objc_selrefs: 0x2a0
++  __DATA_CONST.__objc_selrefs: 0x2b8
+   __DATA_CONST.__got: 0x0
+-  __AUTH_CONST.__const: 0xc490
+-  __AUTH_CONST.__objc_const: 0x4d8
+-  __AUTH_CONST.__auth_got: 0xe98
++  __AUTH_CONST.__const: 0xbad0
++  __AUTH_CONST.__objc_const: 0x518
++  __AUTH_CONST.__auth_got: 0xdd8
+   __AUTH.__objc_data: 0x2a0
+-  __AUTH.__data: 0x8c0
+-  __DATA.__data: 0x2390
+-  __DATA.__bss: 0x17d80
++  __AUTH.__data: 0x5e0
++  __DATA.__data: 0x2110
++  __DATA.__bss: 0x16ba0
+   __DATA.__common: 0x50
+   __DATA_DIRTY.__objc_data: 0x170
+-  __DATA_DIRTY.__data: 0x22a0
+-  __DATA_DIRTY.__bss: 0x480
++  __DATA_DIRTY.__data: 0x2128
++  __DATA_DIRTY.__bss: 0x780
+   __DATA_DIRTY.__common: 0x8
+   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+   - /System/Library/Frameworks/Foundation.framework/Foundation
+
+   - /usr/lib/swift/libswift_Builtin_float.dylib
+   - /usr/lib/swift/libswift_Concurrency.dylib
+   - /usr/lib/swift/libswiftos.dylib
+-  Functions: 5467
+-  Symbols:   1535
+-  CStrings:  732
++  Functions: 5025
++  Symbols:   1461
++  CStrings:  699
+ 
+Symbols:
++ _HKPrivateHealthKitEntitlement
++ _OBJC_CLASS_$_OS_os_log
++ _OBJC_CLASS_$__HKEntitlements
++ ___swift_memcpy1016_8
++ ___swift_memcpy288_8
++ ___swift_memcpy3488_8
++ ___swift_memcpy96_8
++ ___swift_mutable_project_boxed_opaque_existential_1
++ _associated conformance 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLOSHAASQ
++ _associated conformance 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLOs0H3KeyAAs23CustomStringConvertible
++ _associated conformance 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLOs0H3KeyAAs28CustomDebugStringConvertible
++ _associated conformance 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLOSHAASQ
++ _associated conformance 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLOs0H3KeyAAs23CustomStringConvertible
++ _associated conformance 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLOs0H3KeyAAs28CustomDebugStringConvertible
++ _associated conformance 21AppliedSensingFitness21ReadinessOrchestratorV7compute6inputs13configuration21analyticsEventHandlerAA0D13ComputeResultVAA0D6InputsV_AA0D13ConfigurationVyAA0d9AnalyticsM0VcSgtKF7OvVitalL_OSHAASQ
++ _associated conformance 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_6307C40F5C3E78D42302F71A1ACAF993LLOSHAASQ
++ _associated conformance 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_6307C40F5C3E78D42302F71A1ACAF993LLOs0I3KeyAAs23CustomStringConvertible
++ _associated conformance 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_6307C40F5C3E78D42302F71A1ACAF993LLOs0I3KeyAAs28CustomDebugStringConvertible
++ _associated conformance 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceV0F8IteratorVyx_GScIAA7FailureScI_s5Error
++ _associated conformance 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceVyxGSciAA0F8IteratorSci_ScI
++ _flat unique ScI_px7ElementScIRts_q_7FailureScIRtsXP
++ _flat unique Sci_px7ElementSciRts_q_7FailureSciRtsXP
++ _get_witness_table 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceVyAA22ReadinessComputeResultVGSciHPyHC
++ _swift_getAssociatedConformanceWitness
++ _swift_getAssociatedTypeWitness
++ _swift_getExistentialTypeMetadata
++ _swift_getExtendedExistentialTypeMetadata
++ _swift_makeBoxUnique
++ _swift_release_x9
++ _swift_retain_x1
++ _symbolic $s21AppliedSensingFitness26ReadinessSleepScoreSummaryP
++ _symbolic $s21AppliedSensingFitness27ReadinessActivityDaySummaryP
++ _symbolic $s21AppliedSensingFitness28ReadinessEntitlementCheckingP
++ _symbolic $s21AppliedSensingFitness28ReadinessWorkoutTrainingLoadP
++ _symbolic $sScI
++ _symbolic $sSci
++ _symbolic 7ElementScIQyd__
++ _symbolic 7ElementSciQyd__
++ _symbolic 7FailureScIQyd__
++ _symbolic 7FailureSciQyd__
++ _symbolic SS4name_yyc3runt
++ _symbolic SaySd7caution_Sd6efforttG8sessions_Si3aget
++ _symbolic Say_____G 10Foundation11JSONEncoderC16OutputFormattingV
++ _symbolic So13HKHealthStoreCSg
++ _symbolic _____ 21AppliedSensingFitness16AlgorithmHelpersO14MetricCategoryV
++ _symbolic _____ 21AppliedSensingFitness18ActivityProcessingO
++ _symbolic _____ 21AppliedSensingFitness18RecoveryProcessingO
++ _symbolic _____ 21AppliedSensingFitness18RecoveryProcessingO16ObservationGatesV
++ _symbolic _____ 21AppliedSensingFitness19RecoveryDiagnosticsV
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLO
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO13SleepCategoryV
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO15CombinedDynamicV
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLO
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO16CombinedRecoveryV
++ _symbolic _____ 21AppliedSensingFitness20ReadinessIntegrationO19CombinedDaytimeOnlyV
++ _symbolic _____ 21AppliedSensingFitness21ReadinessOrchestratorV
++ _symbolic _____ 21AppliedSensingFitness21ReadinessOrchestratorV17OvernightRCArrays33_1D92667EF95D2D7B665305AD76C0BF37LLV
++ _symbolic _____ 21AppliedSensingFitness21ReadinessOrchestratorV7compute6inputs13configuration21analyticsEventHandlerAA0D13ComputeResultVAA0D6InputsV_AA0D13ConfigurationVyAA0d9AnalyticsM0VcSgtKF7OvVitalL_O
++ _symbolic _____ 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_6307C40F5C3E78D42302F71A1ACAF993LLO
++ _symbolic _____ 21AppliedSensingFitness25ProcessEntitlementCheckerV
++ _symbolic _____ 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceV
++ _symbolic _____ 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceV0F8IteratorV
++ _symbolic _____4date______3dayt 10Foundation4DateV 9HealthKit8DayIndexV
++ _symbolic _____4date______3daytSg 10Foundation4DateV 9HealthKit8DayIndexV
++ _symbolic _____4date______3daytycSg 10Foundation4DateV 9HealthKit8DayIndexV
++ _symbolic _____Ieghr_ 10Foundation4DateV
++ _symbolic _____Sg 13HealthBalance14VitalsDayStateV
++ _symbolic _____Sg 13HealthBalance24ReadinessCharacteristicsV
++ _symbolic _____Sg 13HealthBalance24ReadinessCharacteristicsV9BirthDateV
++ _symbolic _____Sg 13HealthBalance34VitalsBaselineComparisonEvaluationV
++ _symbolic _____Sg 13HealthBalance36ReadinessMostRecentSamplesDaySummaryV
++ _symbolic _____Sg 21AppliedSensingFitness15InputAggregatorV
++ _symbolic _____Sg_ABt 13HealthBalance24ReadinessCharacteristicsV
++ _symbolic ______p 21AppliedSensingFitness28ReadinessEntitlementCheckingP
++ _symbolic ______p s19_HasContiguousBytesP
++ _symbolic _____x______pXjSg r0_lScI_px7ElementRts_q_7FailureRtsXPXGMq s5ErrorP
++ _symbolic _____x______pXj_____cSg r0_lSci_px7ElementRts_q_7FailureRtsXPXGMq s5ErrorP 10Foundation4DateV
++ _symbolic _____ySd5value_Sd6severetG s23_ContiguousArrayStorageC
++ _symbolic _____ySi3day_Sb14isActiveEnergytG s23_ContiguousArrayStorageC
++ _symbolic _____ySiSbG s18_DictionaryStorageC
++ _symbolic _____ySi_SbtG s23_ContiguousArrayStorageC
++ _symbolic _____yYbc 10Foundation4DateV
++ _symbolic _____y_Qo_ 13HealthBalance30ReadinessInputsQueryDescriptorV12resultStream3forQrSo13HKHealthStoreC_tFQO
++ _symbolic _____y_____5vital_SaySdG8originalSdSg_____c4gen4SbSgAGc17baselineAvailable_____SgAGc14classificationtG s23_ContiguousArrayStorageC 21AppliedSensingFitness21ReadinessOrchestratorV7compute6inputs13configuration21analyticsEventHandlerAC0G13ComputeResultVAC0G6InputsV_AC0G13ConfigurationVyAC0g9AnalyticsP0VcSgtKF7OvVitalL_O AC16OvernightMetricsV AC26VitalsMetricClassificationO
++ _symbolic _____y_____G 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceV AA22ReadinessComputeResultV
++ _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLO
++ _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLO
++ _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_6307C40F5C3E78D42302F71A1ACAF993LLO
++ _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLO
++ _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV10CodingKeys33_6D4063C26FF4EFF03BCAB1B17A806B5CLLO
++ _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_6307C40F5C3E78D42302F71A1ACAF993LLO
++ _symbolic _____y_____G s23_ContiguousArrayStorageC 10Foundation11JSONEncoderC16OutputFormattingV
++ _symbolic _____y_____G s23_ContiguousArrayStorageC 13HealthBalance34VitalsBaselineComparisonEvaluationV
++ _symbolic _____y_____SaySdGG s18_DictionaryStorageC 21AppliedSensingFitness21ReadinessOrchestratorV7compute6inputs13configuration21analyticsEventHandlerAC0F13ComputeResultVAC0F6InputsV_AC0F13ConfigurationVyAC0f9AnalyticsO0VcSgtKF7OvVitalL_O
++ _symbolic _____y_____y_Qo______G s24AsyncThrowingMapSequenceV 13HealthBalance30ReadinessInputsQueryDescriptorV12resultStream3forQrSo13HKHealthStoreC_tFQO 21AppliedSensingFitness0G13ComputeResultV
++ _symbolic _____yx_G 21AppliedSensingFitness28CheckedUpstreamAsyncSequenceV0F8IteratorV
++ _symbolic q_
++ _symbolic qd__
++ _symbolic yyc
++ _type_layout_string 21AppliedSensingFitness16AlgorithmHelpersO14MetricCategoryV
++ _type_layout_string 21AppliedSensingFitness18RecoveryProcessingO16ObservationGatesV
++ _type_layout_string 21AppliedSensingFitness19RecoveryDiagnosticsV
++ _type_layout_string 21AppliedSensingFitness20ReadinessIntegrationO13DrivingFactorV
++ _type_layout_string 21AppliedSensingFitness20ReadinessIntegrationO13SleepCategoryV
++ _type_layout_string 21AppliedSensingFitness20ReadinessIntegrationO15CombinedDynamicV
++ _type_layout_string 21AppliedSensingFitness20ReadinessIntegrationO16CombinedActivityV
++ _type_layout_string 21AppliedSensingFitness20ReadinessIntegrationO16CombinedRecoveryV
++ _type_layout_string 21AppliedSensingFitness20ReadinessIntegrationO19CombinedDaytimeOnlyV
++ _type_layout_string 21AppliedSensingFitness21ReadinessOrchestratorV17OvernightRCArrays33_1D92667EF95D2D7B665305AD76C0BF37LLV
+- ___DaytimeMetrics_isAvailable
+- ___VitalsEnhancements_isAvailable
+- ___swift_closure_destructor.124Tm
+- ___swift_closure_destructor.21Tm
+- ___swift_closure_destructor.25Tm
+- ___swift_closure_destructor.43Tm
+- ___swift_closure_destructorTm
+- ___swift_destroy_boxed_opaque_existential_1Tm
+- ___swift_get_extra_inhabitant_index.73Tm
+- ___swift_get_extra_inhabitant_index.82Tm
+- ___swift_memcpy17_8
+- ___swift_memcpy216_8
+- ___swift_memcpy272_8
+- ___swift_memcpy3440_8
+- ___swift_memcpy968_8
+- ___swift_store_extra_inhabitant_index.74Tm
+- ___swift_store_extra_inhabitant_index.83Tm
+- __os_feature_enabled_impl
+- _associated conformance 21AppliedSensingFitness13ActivityScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOSHAASQ
+- _associated conformance 21AppliedSensingFitness13ActivityScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOs0F3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness13ActivityScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOs0F3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness13RecoveryScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOSHAASQ
+- _associated conformance 21AppliedSensingFitness13RecoveryScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOs0F3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness13RecoveryScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOs0F3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness16RollingRatioDataV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOSHAASQ
+- _associated conformance 21AppliedSensingFitness16RollingRatioDataV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOs0G3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness16RollingRatioDataV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLOs0G3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness23MetricOutlierParametersV10CodingKeys33_8E377E5C35A43A87804D51E29D4801CCLLOSHAASQ
+- _associated conformance 21AppliedSensingFitness23MetricOutlierParametersV10CodingKeys33_8E377E5C35A43A87804D51E29D4801CCLLOs0G3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness23MetricOutlierParametersV10CodingKeys33_8E377E5C35A43A87804D51E29D4801CCLLOs0G3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_4EC97F698DA9113E7EDD336A814C8592LLOSHAASQ
+- _associated conformance 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_4EC97F698DA9113E7EDD336A814C8592LLOs0I3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_4EC97F698DA9113E7EDD336A814C8592LLOs0I3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLOSHAASQ
+- _associated conformance 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLOs0I3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLOs0I3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLOSHAASQ
+- _associated conformance 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLOs0I3KeyAAs23CustomStringConvertible
+- _associated conformance 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLOs0I3KeyAAs28CustomDebugStringConvertible
+- _associated conformance 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V7compute6inputs13configuration21analyticsEventHandlerAA0D13ComputeResultVAA0D6InputsV_AA0D13ConfigurationVyAA0d9AnalyticsN0VcSgtKF7OvVitalL_OSHAASQ
+- _get_enum_tag_for_layout_string 21AppliedSensingFitness16RollingRatioDataVSg
+- _get_witness_table s16AsyncMapSequenceVy13HealthBalance29ReadinessScoreQueryDescriptorV7results3forQrSo13HKHealthStoreC_tFQOy_Qo_21AppliedSensingFitness0F13ComputeResultVGSciHPyHC
+- _swift_asyncLet_begin
+- _swift_asyncLet_finish
+- _swift_asyncLet_get
+- _swift_release_x1
+- _swift_willThrowTypedImpl
+- _symbolic $s21AppliedSensingFitness17ActivityProcessorP
+- _symbolic $s21AppliedSensingFitness17RecoveryProcessorP
+- _symbolic $s21AppliedSensingFitness19ReadinessIntegratorP
+- _symbolic SDyS2SG
+- _symbolic SDySSSdG
+- _symbolic SDy_____Say_____GG 21AppliedSensingFitness8DayIndexV AA24ActivityProcessing_V0_11O15IntendedSessionV
+- _symbolic Say_____G 21AppliedSensingFitness17WorkoutLoadResultV
+- _symbolic Say_____G 21AppliedSensingFitness18ActiveEnergyResultV
+- _symbolic Say_____G 21AppliedSensingFitness18TrainingLoadResultV
+- _symbolic Say_____G 21AppliedSensingFitness21WorkoutDurationResultV
+- _symbolic Say_____G 21AppliedSensingFitness8DayIndexV
+- _symbolic ScCySay_____G______pG 21AppliedSensingFitness18ActiveEnergyResultV s5ErrorP
+- _symbolic ScCySay_____G______pG 21AppliedSensingFitness18TrainingLoadResultV s5ErrorP
+- _symbolic ScCySay_____G______pGSg 21AppliedSensingFitness18ActiveEnergyResultV s5ErrorP
+- _symbolic ScCySay_____G______pGSg 21AppliedSensingFitness18TrainingLoadResultV s5ErrorP
+- _symbolic ScCy___________pG 21AppliedSensingFitness18ActiveEnergyResultV s5ErrorP
+- _symbolic ScCy___________pG 21AppliedSensingFitness18TrainingLoadResultV s5ErrorP
+- _symbolic ScCy___________pGSg 21AppliedSensingFitness18ActiveEnergyResultV s5ErrorP
+- _symbolic ScCy___________pGSg 21AppliedSensingFitness18TrainingLoadResultV s5ErrorP
+- _symbolic Si6offset______7elementt 21AppliedSensingFitness13DailyActivityV
+- _symbolic Si______t 13HealthBalance28TrainingLoadSampleDaySummaryV
+- _symbolic Sny_____G 9HealthKit8DayIndexV
+- _symbolic _____ 21AppliedSensingFitness12QueryResultsV
+- _symbolic _____ 21AppliedSensingFitness13ActivityScoreV
+- _symbolic _____ 21AppliedSensingFitness13ActivityScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____ 21AppliedSensingFitness13RecoveryScoreV
+- _symbolic _____ 21AppliedSensingFitness13RecoveryScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____ 21AppliedSensingFitness15InputAggregatorV18WorkoutQueryOutputV
+- _symbolic _____ 21AppliedSensingFitness16RollingRatioDataV
+- _symbolic _____ 21AppliedSensingFitness16RollingRatioDataV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____ 21AppliedSensingFitness17ActiveEnergyQueryV
+- _symbolic _____ 21AppliedSensingFitness17TrainingLoadQueryV
+- _symbolic _____ 21AppliedSensingFitness18ActiveEnergyResultV
+- _symbolic _____ 21AppliedSensingFitness18TrainingLoadResultV
+- _symbolic _____ 21AppliedSensingFitness22ActiveEnergyBatchQueryV
+- _symbolic _____ 21AppliedSensingFitness22TrainingLoadBatchQueryV
+- _symbolic _____ 21AppliedSensingFitness23MetricOutlierParametersV
+- _symbolic _____ 21AppliedSensingFitness23MetricOutlierParametersV10CodingKeys33_8E377E5C35A43A87804D51E29D4801CCLLO
+- _symbolic _____ 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_4EC97F698DA9113E7EDD336A814C8592LLO
+- _symbolic _____ 21AppliedSensingFitness24RecoveryProcessing_V0_11O
+- _symbolic _____ 21AppliedSensingFitness24RecoveryProcessing_V0_11O16ObservationGatesV
+- _symbolic _____ 21AppliedSensingFitness25ReadinessIntegrator_V0_11O
+- _symbolic _____ 21AppliedSensingFitness25RecoveryDiagnostics_V0_11V
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLO
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O13SleepCategoryV
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O14MetricCategoryV
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O15CombinedDynamicV
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLO
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedRecoveryV
+- _symbolic _____ 21AppliedSensingFitness26ReadinessIntegration_V0_11O19CombinedDaytimeOnlyV
+- _symbolic _____ 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V
+- _symbolic _____ 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V17OvernightRCArrays33_48D3584B7D37BAE5D3A221FEE4042469LLV
+- _symbolic _____ 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V7compute6inputs13configuration21analyticsEventHandlerAA0D13ComputeResultVAA0D6InputsV_AA0D13ConfigurationVyAA0d9AnalyticsN0VcSgtKF7OvVitalL_O
+- _symbolic _____3key_Sd5valuet 13HealthBalance19ActivitySubScoreKeyO
+- _symbolic _____3key______5valuet 13HealthBalance19RecoverySubScoreKeyO AA09ReadinessE6ResultV05SleepdE0V
+- _symbolic _____3key______5valuet 13HealthBalance19RecoverySubScoreKeyO AA09ReadinessE6ResultV06VitalsdE0V
+- _symbolic _____8dayIndex______7summaryt 21AppliedSensingFitness8DayIndexV 13HealthBalance018TrainingLoadSampleD7SummaryV
+- _symbolic _____Sg 13HealthBalance20ReadinessResultErrorO
+- _symbolic _____Sg 13HealthBalance20ReadinessScoreResultV10ComponentsV
+- _symbolic _____Sg 13HealthBalance20ReadinessScoreResultV5ValueV
+- _symbolic _____Sg 13HealthBalance22ReadinessCategoryLabelO
+- _symbolic _____Sg 13HealthBalance23ReadinessActivityFactorO
+- _symbolic _____Sg 21AppliedSensingFitness06CardioC20MedicationsUseResultV
+- _symbolic _____Sg 21AppliedSensingFitness11StepsResultV
+- _symbolic _____Sg 21AppliedSensingFitness12HeightResultV
+- _symbolic _____Sg 21AppliedSensingFitness12VO2MaxResultV
+- _symbolic _____Sg 21AppliedSensingFitness13DailyActivityV
+- _symbolic _____Sg 21AppliedSensingFitness14BodyMassResultV
+- _symbolic _____Sg 21AppliedSensingFitness14DistanceResultV
+- _symbolic _____Sg 21AppliedSensingFitness16RollingRatioDataV
+- _symbolic _____Sg 21AppliedSensingFitness16StandHoursResultV
+- _symbolic _____Sg 21AppliedSensingFitness17DateOfBirthResultV
+- _symbolic _____Sg 21AppliedSensingFitness17WorkoutLoadResultV
+- _symbolic _____Sg 21AppliedSensingFitness18ActiveEnergyResultV
+- _symbolic _____Sg 21AppliedSensingFitness18TrainingLoadResultV
+- _symbolic _____Sg 21AppliedSensingFitness19BiologicalSexResultV
+- _symbolic _____Sg 21AppliedSensingFitness21ExerciseMinutesResultV
+- _symbolic _____Sg 21AppliedSensingFitness22ActivityMoveModeResultV
+- _symbolic _____Sg 21AppliedSensingFitness22OvernightMetricsResultV
+- _symbolic _____Sg 9HealthKit42HKWorkoutEffortRelationshipQueryDescriptorV6ResultV
+- _symbolic _____ySS4name_SS7summary_Sb7hasDatatyYaYCc3runtG s23_ContiguousArrayStorageC
+- _symbolic _____ySaySd7caution_Sd6efforttG8sessions_Si3agetG s23_ContiguousArrayStorageC
+- _symbolic _____ySay_____GG 21AppliedSensingFitness30CancellableCheckedContinuationC AA18ActiveEnergyResultV
+- _symbolic _____ySay_____GG 21AppliedSensingFitness30CancellableCheckedContinuationC AA18TrainingLoadResultV
+- _symbolic _____ySay_____GG s23_ContiguousArrayStorageC 21AppliedSensingFitness8DayIndexV
+- _symbolic _____yScCySay_____G______pGSgG 15Synchronization5MutexVAARi_zrlE 21AppliedSensingFitness18ActiveEnergyResultV s5ErrorP
+- _symbolic _____yScCySay_____G______pGSgG 15Synchronization5MutexVAARi_zrlE 21AppliedSensingFitness18TrainingLoadResultV s5ErrorP
+- _symbolic _____yScCy___________pGSgG 15Synchronization5MutexVAARi_zrlE 21AppliedSensingFitness18ActiveEnergyResultV s5ErrorP
+- _symbolic _____yScCy___________pGSgG 15Synchronization5MutexVAARi_zrlE 21AppliedSensingFitness18TrainingLoadResultV s5ErrorP
+- _symbolic _____ySi_____G s18_DictionaryStorageC 13HealthBalance28TrainingLoadSampleDaySummaryV
+- _symbolic _____y_Qo_ 13HealthBalance29ReadinessScoreQueryDescriptorV7results3forQrSo13HKHealthStoreC_tFQO
+- _symbolic _____y_____5vital_SaySdG8originalSdSg_____c4gen4SbSgAGc17baselineAvailable_____SgAGc14classificationtG s23_ContiguousArrayStorageC 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V7compute6inputs13configuration21analyticsEventHandlerAC0G13ComputeResultVAC0G6InputsV_AC0G13ConfigurationVyAC0g9AnalyticsQ0VcSgtKF7OvVitalL_O AC16OvernightMetricsV AC26VitalsMetricClassificationO
+- _symbolic _____y_____8dayIndex______7summarytG s23_ContiguousArrayStorageC 21AppliedSensingFitness8DayIndexV 13HealthBalance018TrainingLoadSampleG7SummaryV
+- _symbolic _____y_____G 21AppliedSensingFitness30CancellableCheckedContinuationC AA18ActiveEnergyResultV
+- _symbolic _____y_____G 21AppliedSensingFitness30CancellableCheckedContinuationC AA18TrainingLoadResultV
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness13ActivityScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness13RecoveryScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness16RollingRatioDataV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness23MetricOutlierParametersV10CodingKeys33_8E377E5C35A43A87804D51E29D4801CCLLO
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_4EC97F698DA9113E7EDD336A814C8592LLO
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLO
+- _symbolic _____y_____G s22KeyedDecodingContainerV 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness13ActivityScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness13RecoveryScoreV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness16RollingRatioDataV10CodingKeys33_5CDE98C91BA93ADE71D7E5DCB22F7D6CLLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness23MetricOutlierParametersV10CodingKeys33_8E377E5C35A43A87804D51E29D4801CCLLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness24ActivityProcessing_V0_11O15IntendedSessionV10CodingKeys33_4EC97F698DA9113E7EDD336A814C8592LLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLO
+- _symbolic _____y_____G s22KeyedEncodingContainerV 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV10CodingKeys33_88390140410806B0EE45FFC79CE45027LLO
+- _symbolic _____y_____G s23_ContiguousArrayStorageC 13HealthBalance26VitalsMetricEvaluationTypeO
+- _symbolic _____y_____G s23_ContiguousArrayStorageC 21AppliedSensingFitness11WorkoutDataV
+- _symbolic _____y_____G s23_ContiguousArrayStorageC 21AppliedSensingFitness17WorkoutLoadResultV
+- _symbolic _____y_____G s23_ContiguousArrayStorageC 21AppliedSensingFitness18ActiveEnergyResultV
+- _symbolic _____y_____G s23_ContiguousArrayStorageC 21AppliedSensingFitness18TrainingLoadResultV
+- _symbolic _____y_____SaySdGG s18_DictionaryStorageC 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V7compute6inputs13configuration21analyticsEventHandlerAC0F13ComputeResultVAC0F6InputsV_AC0F13ConfigurationVyAC0f9AnalyticsP0VcSgtKF7OvVitalL_O
+- _symbolic _____y______SdtG s23_ContiguousArrayStorageC 21AppliedSensingFitness17ActivityComponentO
+- _symbolic _____y___________pG s6ResultOsRi_zRi0_zrlE 21AppliedSensingFitness012ActiveEnergyA0V s5ErrorP
+- _symbolic _____y___________pG s6ResultOsRi_zRi0_zrlE 21AppliedSensingFitness012TrainingLoadA0V s5ErrorP
+- _symbolic _____y___________tG s23_ContiguousArrayStorageC 21AppliedSensingFitness17RecoveryComponentO AC13SleepSubScoreV
+- _symbolic _____y___________tG s23_ContiguousArrayStorageC 21AppliedSensingFitness17RecoveryComponentO AC14VitalsSubScoreV
+- _symbolic _____y_____y_Qo______G s16AsyncMapSequenceV 13HealthBalance29ReadinessScoreQueryDescriptorV7results3forQrSo13HKHealthStoreC_tFQO 21AppliedSensingFitness0F13ComputeResultV
+- _type_layout_string 21AppliedSensingFitness13ActivityScoreV
+- _type_layout_string 21AppliedSensingFitness13RecoveryScoreV
+- _type_layout_string 21AppliedSensingFitness15InputAggregatorV18WorkoutQueryOutputV
+- _type_layout_string 21AppliedSensingFitness16RollingRatioDataV
+- _type_layout_string 21AppliedSensingFitness23MetricOutlierParametersV
+- _type_layout_string 21AppliedSensingFitness24RecoveryProcessing_V0_11O16ObservationGatesV
+- _type_layout_string 21AppliedSensingFitness25RecoveryDiagnostics_V0_11V
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O13DrivingFactorV
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O13SleepCategoryV
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O14MetricCategoryV
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O15CombinedDynamicV
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedActivityV
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O16CombinedRecoveryV
+- _type_layout_string 21AppliedSensingFitness26ReadinessIntegration_V0_11O19CombinedDaytimeOnlyV
+- _type_layout_string 21AppliedSensingFitness27ReadinessOrchestrator_V0_11V17OvernightRCArrays33_48D3584B7D37BAE5D3A221FEE4042469LLV
+CStrings:
++ "/8 legs with data"
++ "InputAggregator.readinessInputsQuery"
++ "Readiness algorithm parameters V1.1.1"
++ "Readiness inputs are unavailable in this configuration: the inputs query requires the VitalsEnhancements and DaytimeMetrics feature domains on iOS/watchOS 27.2 or later. This is not a caller error, and no other entry point substitutes - obtaining a ReadinessInputsQueryResult requires the same availability."
++ "ReadinessFramework.ReadinessInputs"
++ "ReadinessInputsQuery (1 descriptor)"
++ "This ReadinessManager was created without an HKHealthStore (init(calendar:parameters:)), so it cannot query. Use computeReadiness(from:for:) or computeReadiness(inputs:), or construct it with init(healthStore:calendar:parameters:)."
++ "This process is missing the required entitlement com.apple.private.healthkit, so a Readiness score cannot be returned for a caller-supplied ReadinessInputsQueryResult. The result is derived from data read with daemon privilege. A caller that supplies its own ReadinessInputs may use computeReadiness(inputs:) instead."
++ "_workoutIntensity"
++ "activityOverflowCapAppliedDynamic"
++ "activityOverflowCapAppliedStatic"
++ "activityOverflowCapThreshold"
++ "activityPoolMinDynamic"
++ "activityPoolMinStatic"
++ "cappedToReadyNegativeActivityDynamic"
++ "cappedToReadyNegativeActivityStatic"
++ "cappedToReadyNegativeDynamicVitals"
++ "com.apple.private.healthkit"
++ "compute: %{public}ld overnight valence reconciliation(s) - scale sign vs Vitals evaluation diverged"
++ "computeReadiness(from:) refused: host process is missing %{public}s"
++ "effortGatingApplied"
++ "entitlement check failed to read the current task; refusing: %{private}s"
++ "overallScoreNegativeClassCeiling"
++ "overallScoreNegativeClassCeilingAppliedDynamic"
++ "overallScoreNegativeClassCeilingAppliedStatic"
++ "readiness inputs (values): %{private}s"
++ "readiness inputs assembled: activityDays=%{public}ld (cal=%{public}ld load=%{public}ld) nights=%{public}ld (rhr=%{public}ld spo2=%{public}ld rr=%{public}ld wt=%{public}ld totalSleep=%{public}ld sleepScore=%{public}ld hrv=%{public}ld baselines=%{public}ld) morning=%{public}ld daytimeDynamic=%{public}ld body=%{public}s wear=%{bool,public}d settings=%{bool,public}d spo2InScore=%{public}s sleepTrackingIncomplete=%{public}s quality=%{public}s"
++ "readiness inputs could not be encoded for logging"
++ "readinessInputsQuery ran: day=%{public}ld legs overnight=%{public}ld daytime=%{public}ld sleep=%{public}ld activity=%{public}ld trainingLoads=%{public}ld effort=%{public}ld characteristics=%{public}ld mostRecent=%{public}ld"
++ "score_todayAndYesterday_Dynamic_workoutIntensity"
++ "score_today_Dynamic_workoutIntensity"
++ "score_yesterday_"
++ "spo2IncludedInScoring"
++ "your workout today"
++ "your workout yesterday"
++ "your workouts today and yesterday"
+- "    relComp rhr=%{private}f o2=%{private}f rr=%{private}f temp=%{private}f sleep=%{private}f hrv=%{private}f sleepScore=%{private}f"
+- "  day %{public}ld %{private}s: acal=%{private}f aeRatio=%{private}f wl=%{private}f wlRatio=%{private}f"
+- "  night %{public}ld %{private}s: rhr=%{private}f spo2=%{private}f rr=%{private}f temp=%{private}f sleep=%{private}f sleepScore=%{private}f hrv=%{private}f"
+- "Active energy query failed: "
+- "ActiveCalories summary query failed: %{public}s"
+- "ActiveCalories summary: %{public}ld days for %{private}s...%{private}s"
+- "ActiveCaloriesSummary ("
+- "ActiveEnergy (HB batch "
+- "ActiveEnergy query failed: %{public}s"
+- "ActiveEnergy: %{public}ld results for %{private}s...%{private}s"
+- "Activity inputs: %{public}ld days"
+- "ActivityMoveMode"
+- "ActivityMoveMode query failed: %{public}s"
+- "BiologicalSex query failed: %{public}s"
+- "BodyMass query failed: %{public}s"
+- "Cardio fitness medications query failed: %{public}s"
+- "CardioFitnessMedicationsUse"
+- "DateOfBirth query failed: %{public}s"
+- "DaytimeMetrics"
+- "DaytimeMetrics: No daytime vitals result available, returning empty"
+- "DaytimeMetrics: VitalsEnhancements/DaytimeMetrics not available, returning empty"
+- "DaytimeVitals (today)"
+- "DaytimeVitals query failed: %{public}s"
+- "DaytimeVitals: %{public}ld summaries for %{private}s"
+- "DaytimeVitals: VitalsEnhancements/DaytimeMetrics not available"
+- "Distance (today)"
+- "Duplicate values for key: '"
+- "ExerciseMinutes (today)"
+- "Health"
+- "Height query failed: %{public}s"
+- "IQR multipliers must be positive"
+- "InputAggregator.executeAllQueries"
+- "OvernightMetrics (1 night)"
+- "OvernightMetrics query failed: %{public}s"
+- "OvernightMetrics: %{public}ld summaries for %{private}s...%{private}s"
+- "Readiness algorithm parameters V1.0.2"
+- "Recovery inputs: %{public}ld nights"
+- "SleepScore query failed: %{public}s"
+- "SleepScore: %{public}ld nights for %{private}s...%{private}s"
+- "SleepScoreRange ("
+- "SpO2 inclusion signal query failed; defaulting closed (exclude): %{public}s"
+- "StandHours (today)"
+- "Swift/NativeDictionary.swift"
+- "Training load query failed: "
+- "TrainingLoad (HB batch "
+- "TrainingLoad query failed: %{public}s"
+- "TrainingLoad: %{public}ld results for %{private}s...%{private}s"
+- "VO2Max query failed: %{public}s"
+- "VitalsEnhancements"
+- "WorkoutDuration ("
+- "WorkoutDuration query failed: %{public}s"
+- "WorkoutLoad SPI ("
+- "WorkoutLoad SPI query failed: %{public}s"
+- "WorkoutLoad SPI: %{public}ld day results for %{private}s...%{private}s"
+- "activeCaloriesQueries"
+- "activeCaloriesRatios"
+- "activeEnergyQueries"
+- "computeReadiness: %{public}ld overnight valence reconciliation(s) - scale sign vs Vitals evaluation diverged"
+- "dynamicAdjustedScore"
+- "more substantial"
+- "overnightMetricsQueries"
+- "physiologicalStress"
+- "score_intndCaution_Dynamic"
+- "score_intndCaution_Static"
+- "sleepScoreQueries"
+- "stringComponents"
+- "trainingLoadQueries"
+- "workoutLoadQueries"
+- "workoutLoadRatios"
+```
